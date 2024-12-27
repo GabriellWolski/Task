@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: "Orbitron", serif;
+    color: white;
+}
+
+body {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.container-todo-list {
+    background-color: #1f2020;
+    width: 500px;
+    /* height: 100vh; */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: greenyellow;
+}
+
+.container-input-add {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    /* margin-left: 1rem; */
+}
+
+input {
+    padding: 0.45rem;
+    margin-bottom: 1.45rem;
+    margin-right: 0.25rem;
+    margin-top: 0.06rem;
+    color: black;
+}
+
+.fa-plus{
+    color: greenyellow;
+    margin-left: 0.65rem;
+    padding: 0.35rem;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .4s;
+    border-radius: 4px;
+
+}
+
+.fa-plus:hover{
+    background-color: white;
+    color: gray;
+}
+
+h2 {
+    margin-bottom: 1.45rem;
+    color: greenyellow;
+}
+
+.tarefas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.fa-trash-can {
+    color: white;
+    padding: 0.45rem;
+    font-size: 20px;
+    position: absolute;
+    right: 0.45rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.fa-trash-can:hover {
+    color: gray;
+}
+
+.tarefas span {
+    width: 100%;
+    /* background-color: white; */
+    border: 2px solid greenyellow;
+    padding: 0.45rem;
+    text-indent: 0.45rem;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container-todo-list {
+        width: 350px;
+    }
+}
